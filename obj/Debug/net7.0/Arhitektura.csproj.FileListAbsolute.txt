@@ -1,0 +1,112 @@
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\appsettings.Development.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\appsettings.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Arhitektura.staticwebassets.runtime.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Arhitektura.exe
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Arhitektura.deps.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Arhitektura.runtimeconfig.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Arhitektura.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Arhitektura.pdb
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\AWSSDK.Core.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\DnsClient.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\MongoDB.Bson.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\MongoDB.Driver.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\SharpCompress.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Snappier.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\ZstdSharp.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.csproj.AssemblyReference.cache
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.GeneratedMSBuildEditorConfig.editorconfig
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.AssemblyInfoInputs.cache
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.AssemblyInfo.cs
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.csproj.CoreCompileInputs.cache
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.MvcApplicationPartsAssemblyInfo.cache
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.RazorAssemblyInfo.cache
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.RazorAssemblyInfo.cs
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets\msbuild.Arhitektura.Microsoft.AspNetCore.StaticWebAssets.props
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets\msbuild.build.Arhitektura.props
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Arhitektura.props
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Arhitektura.props
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets.pack.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets.build.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\staticwebassets.development.json
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\scopedcss\bundle\Arhitektura.styles.css
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\scopedcss\projectbundle\Arhitektura.bundle.scp.css
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.csproj.CopyComplete
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\refint\Arhitektura.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.pdb
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\Arhitektura.genruntimeconfig.cache
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\obj\Debug\net7.0\ref\Arhitektura.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\programi\programiranje\RPP_i_Arhitektura\Arhitektura\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\appsettings.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Arhitektura.staticwebassets.runtime.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Arhitektura.exe
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Arhitektura.deps.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Arhitektura.runtimeconfig.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Arhitektura.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Arhitektura.pdb
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\DnsClient.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\Snappier.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.csproj.AssemblyReference.cache
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.AssemblyInfoInputs.cache
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.AssemblyInfo.cs
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.RazorAssemblyInfo.cache
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.RazorAssemblyInfo.cs
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets\msbuild.Arhitektura.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets\msbuild.build.Arhitektura.props
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Arhitektura.props
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Arhitektura.props
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\scopedcss\bundle\Arhitektura.styles.css
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\scopedcss\projectbundle\Arhitektura.bundle.scp.css
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitekt.D5B65680.Up2Date
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\refint\Arhitektura.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.pdb
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.genruntimeconfig.cache
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\ref\Arhitektura.dll

@@ -1,0 +1,201 @@
+@model Arhitektura.Models.Aranzman
+
+<h2>Izmeni aranžman</h2>
+
+<form id="editForm" asp-controller="Aranzman" asp-action="Edit" asp-route-id="@Model.Id" method="post">
+    <div class="form-group">
+        <label asp-for="Opis">Opis:</label>
+        <input asp-for="Opis" class="form-control"/>
+        <span asp-validation-for="Opis" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UkupnaCena">Ukupna cena:</label>
+        <input asp-for="UkupnaCena" class="form-control"/>
+        <span asp-validation-for="UkupnaCena" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Placeno">Plaćeno:</label>
+        <select asp-for="Placeno" class="form-control">
+        <option value="true">Da</option>
+        <option value="false">Ne</option>
+        </select>
+        <span asp-validation-for="Placeno" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DatumRealizacije">Datum realizacije:</label>
+        <input asp-for="DatumRealizacije" class="form-control"/>
+        <span asp-validation-for="DatumRealizacije" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Hotel">Hotel:</label>
+        @Html.DropDownListFor(model => model.Hotel.Id, new SelectList(ViewBag.Hoteli, "Id", "Naziv"), "-- Izaberite hotel --", new { @class = "form-control" })
+        <span asp-validation-for="Hotel" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="TuristickaAgencija">Turistička agencija:</label>
+        @Html.DropDownListFor(model => model.TuristickaAgencija.Id, new SelectList(ViewBag.TuristickeAgencije, "Id", "Naziv"), "-- Izaberite turisticku agenciju --", new { @class = "form-control" })
+        <span asp-validation-for="TuristickaAgencija" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Slika">Slika:</label>
+        <input asp-for="Slika" class="form-control" />
+        <span asp-validation-for="Slika" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="Hotel.Naziv" id="Hotel_Naziv" />
+    <input type="hidden" asp-for="Hotel.BrojZvezdica" id="Hotel_BrojZvezdica" />
+    <input type="hidden" asp-for="Hotel.Opis" id="Hotel_Opis" />
+    <input type="hidden" asp-for="Hotel.Destinacija.Id" id="Hotel_Destinacija_Id" />
+    <input type="hidden" asp-for="Hotel.Destinacija.Mesto" id="Hotel_Destinacija_Mesto" />
+    <input type="hidden" asp-for="Hotel.Destinacija.Drzava" id="Hotel_Destinacija_Drzava" />
+    <input type="hidden" asp-for="Hotel.Destinacija.Opis" id="Hotel_Destinacija_Opis" />
+    <input type="hidden" asp-for="TuristickaAgencija.Naziv" id="TuristickaAgencija_Naziv" />
+    <input type="hidden" asp-for="TuristickaAgencija.Adresa" id="TuristickaAgencija_Adresa" />
+    <input type="hidden" asp-for="TuristickaAgencija.Kontakt" id="TuristickaAgencija_Kontakt" />
+
+    <br>
+    <button type="submit" class="btn btn-success">Sačuvaj</button>
+</form>
+
+@section Scripts {
+    <script>
+
+    // Dodaj stilove za formu
+        var form = document.getElementById("editForm");
+        
+        form.classList.add("edit-form");
+        
+        // Dodaj hover efekat na dugme
+        var submitButton = form.querySelector("button[type='submit']");
+        
+        submitButton.addEventListener("mouseover", function() {
+            this.classList.add("btn-hover");
+        });
+        
+        submitButton.addEventListener("mouseout", function() {
+            this.classList.remove("btn-hover");
+        });
+
+    $(document).ready(function () {
+    $("#Hotel_Id").change(function () {
+        var selectedHotelsId = $(this).val();
+        var selectedHotel = null;
+        var hoteli = @Html.Raw(Json.Serialize(ViewBag.Hoteli));
+
+        for (var i = 0; i < hoteli.length; i++) {
+            if (hoteli[i].id === selectedHotelsId) {
+                selectedHotel = hoteli[i];
+                
+                break;
+            }
+        }
+        if (selectedHotel !== null) {
+            $("#Hotel_Naziv").val(selectedHotel.naziv);
+            $("#Hotel_BrojZvezdica").val(selectedHotel.brojZvezdica);
+            $("#Hotel_Opis").val(selectedHotel.opis);
+            $("#Hotel_Destinacija_Id").val(selectedHotel.destinacija.id);
+            $("#Hotel_Destinacija_Mesto").val(selectedHotel.destinacija.mesto);
+            $("#Hotel_Destinacija_Drzava").val(selectedHotel.destinacija.drzava);
+            $("#Hotel_Destinacija_Opis").val(selectedHotel.destinacija.opis);
+        }
+    });
+});
+
+$(document).ready(function () {
+    $("#TuristickaAgencija_Id").change(function () {
+        var selectedAgencijeId = $(this).val();
+        var selectedAgencija = null;
+        var agencije = @Html.Raw(Json.Serialize(ViewBag.TuristickeAgencije));
+
+        for (var i = 0; i < agencije.length; i++) {
+            if (agencije[i].id === selectedAgencijeId) {
+                selectedAgencija = agencije[i];
+                
+                break;
+            }
+        }
+        if (selectedAgencija !== null) {
+            $("#TuristickaAgencija_Naziv").val(selectedAgencija.naziv);
+            $("#TuristickaAgencija_Adresa").val(selectedAgencija.adresa);
+            $("#TuristickaAgencija_Kontakt").val(selectedAgencija.kontakt);
+        }
+    });
+});
+
+    </script>
+}
+
+<style>
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    
+    .text-danger {
+        color: #a94442;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+    
+    .btn-hover {
+        background-color: #fff;
+        border-color: #337ab7;
+        color: #337ab7;
+    }
+    
+    .edit-form {
+        width: 300px;
+        margin: 0 auto;
+    }
+</style>

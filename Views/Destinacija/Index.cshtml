@@ -1,0 +1,60 @@
+@model List<Arhitektura.Models.Destinacija>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+<h2>Destinacije</h2>
+
+<div class="row mb-3">
+    @if (Context.Session.GetString("Role") == "admin")
+    {
+        <div class="col-md-4">
+            <a asp-controller="Destinacija" asp-action="Create" class="btn btn-success">Dodaj destinaciju</a>
+        </div>
+    }
+</div>
+
+<div class="row">
+    @foreach (var destinacija in Model)
+    {
+        <div class="col-md-4 mb-4"> <!-- Added 'col-md-4' and 'mb-4' for horizontal and vertical spacing -->
+            <div class="card h-100">
+                @if (!string.IsNullOrEmpty(destinacija.Slika))
+                {
+                    <img src="@destinacija.Slika" class="card-img-top" alt="Slika destinacije">
+                }
+                else
+                {
+                    <img src="/images/notFound.png" class="card-img-top" alt="Slika destinacije">
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@destinacija.Mesto</h5>
+                    <p class="card-text">
+                        Država: @destinacija.Drzava<br>
+                        Opis: @destinacija.Opis<br>
+                    </p>
+
+                    @if (Context.Session.GetString("Role") == "admin")
+                    {
+                        <a asp-controller="Destinacija" asp-action="Edit" asp-route-id="@destinacija.Id" class="btn btn-success">Izmeni</a>
+                        <a asp-controller="Destinacija" asp-action="Delete" asp-route-id="@destinacija.Id" class="btn btn-secondary">Obriši</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

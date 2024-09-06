@@ -1,0 +1,74 @@
+@model List<Arhitektura.Models.Hotel>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 210px;
+        object-fit: fill;
+    }
+
+    .stars {
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+
+<h2>Hoteli</h2>
+
+<div class="row mb-3">
+    @if (Context.Session.GetString("Role") == "admin")
+    {
+        <div class="col-md-4">
+            <a asp-controller="Hotel" asp-action="Create" class="btn btn-success">Dodaj hotel</a>
+        </div>
+    }
+</div>
+
+<div class="row">
+    @foreach (var hotel in Model)
+    {
+        <div class="col-md-4 mb-4"> <!-- Added 'col-md-4' and 'mb-4' for horizontal and vertical spacing -->
+            <div class="card h-100">
+                @if (!string.IsNullOrEmpty(hotel.Slika))
+                {
+                    <img src="@hotel.Slika" class="card-img-top" alt="Slika hotela">
+                }
+                else
+                {
+                    <img src="/images/notFound.png" class="card-img-top" alt="Slika hotela">
+                }
+                <div class="card-body">
+                    <h5 class="card-title" style="margin-bottom: 0">@hotel.Naziv</h5>
+                    <p class="card-text" style="margin: 0;">
+                        <div class="stars">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= hotel.BrojZvezdica)
+                                {
+                                    <img src="@($"/images/stars/star.png")" alt="Zvezdica" width="20" height="18">
+                                }
+                            }
+                        </div>
+                        <br>
+                        Opis: @hotel.Opis<br>
+                        Destinacija: @hotel.Destinacija.Mesto<br>
+                    </p>
+                    @if (Context.Session.GetString("Role") == "admin")
+                    {
+                        <a asp-controller="Hotel" asp-action="Edit" asp-route-id="@hotel.Id" class="btn btn-success">Izmeni</a>
+                        <a asp-controller="Hotel" asp-action="Delete" asp-route-id="@hotel.Id" class="btn btn-secondary">Obriši</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

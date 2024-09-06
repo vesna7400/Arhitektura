@@ -1,0 +1,116 @@
+@model Arhitektura.Models.Hotel
+
+<h2>Obriši hotel</h2>
+
+<p>Da li ste sigurni da želite da obrišete sledeći hotel?</p>
+
+<div>
+    <h4>Destinacija</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Naziv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Naziv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BrojZvezdica)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BrojZvezdica)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Destinacija.Mesto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Destinacija.Mesto)
+        </dd>
+    </dl>
+
+    <form asp-controller="Hotel" asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-secondary">Obriši</button>
+        <a asp-controller="Hotel" asp-action="Index">Nazad na listu</a>
+    </form>
+</div>
+
+<style>
+    .delete-destination {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        margin-bottom: 20px;
+    }
+    
+    h4 {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .row {
+        margin-bottom: 10px;
+    }
+    
+    dt {
+        font-weight: bold;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .btn-danger {
+        color: #fff;
+        background-color: #d9534f;
+        border-color: #d43f3a;
+    }
+    
+    a {
+        color: #337ab7;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+</style>

@@ -1,0 +1,100 @@
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+@model Arhitektura.Roles.User
+
+<style>
+    body {
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-form {
+        width: 50%;
+    }
+
+    .login-form h1 {
+        font-size: 60px; /* Povećan font */
+        margin-bottom: 20px;
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-form p {
+        font-size: 30px; /* Povećan font */
+        margin-bottom: 40px;
+        color: #666;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    .login-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 20px; /* Povećan font */
+        cursor: pointer;
+    }
+
+    .login-form .signup-link {
+        margin-top: 20px;
+        font-size: 18px; /* Povećan font */
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .welcome-text {
+        margin-top: 100px;
+        margin-left: 500px;
+        flex: 1;
+        text-align: right;
+        max-width: 600px;
+        margin-right: 40px; /* Dodat stil */
+    }
+
+    .welcome-text h1 {
+        font-size: 60px; /* Povećan font */
+        margin-bottom: 20px;
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .welcome-text p {
+        font-size: 30px; /* Povećan font */
+        margin-bottom: 40px;
+        color: #666;
+    }
+</style>
+
+<div class="container">
+    <div class="login-form">
+        <h1>Registracija</h1>
+        
+        <form asp-controller="Home" asp-action="Register" method="post">
+            <input type="text" placeholder="Ime" asp-for="Ime" required/>
+            <input type="text" placeholder="Prezime" asp-for="Prezime" required/>
+            <input type="text" placeholder="Korisničko ime" asp-for="Username" required/>
+            <input type="password" placeholder="Lozinka" asp-for="Password" required/>
+            <button type="submit">Registruj se</button>
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </form>
+    </div>
+</div>

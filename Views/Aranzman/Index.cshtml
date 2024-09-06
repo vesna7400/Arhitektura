@@ -1,0 +1,73 @@
+@model List<Arhitektura.Models.Aranzman>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+</style>
+
+<h2>Aranzmani</h2>
+
+<div class="row mb-3">
+    @if (Context.Session.GetString("Role") == "admin")
+    {
+        <div class="col-md-4">
+            <a asp-controller="Aranzman" asp-action="Create" class="btn btn-success">Dodaj aranzman</a>
+        </div>
+    }
+</div>
+
+<div class="row">
+    @foreach (var aranzman in Model)
+    {
+        <div class="col-md-4 mb-4"> <!-- Added 'mb-4' for vertical space between cards -->
+            <div class="card h-100">
+                @if (!string.IsNullOrEmpty(aranzman.Slika))
+                {
+                    <img src="@aranzman.Slika" class="card-img-top" alt="Slika destinacije">
+                }
+                else
+                {
+                    <img src="/images/notFound.png" class="card-img-top" alt="Slika destinacije">
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@aranzman.Opis</h5>
+                    <p class="card-text">
+                        Ukupna cena: @aranzman.UkupnaCena RSD<br>
+                        Status: @(aranzman.Placeno ? "Rezervisan" : "Dostupan")<br>
+                        Datum realizacije: @aranzman.DatumRealizacije.ToString("dd.MM.yyyy")<br>
+                        Hotel: @aranzman.Hotel.Naziv<br>
+                        Turistička agencija: @aranzman.TuristickaAgencija.Naziv<br>
+                    </p>
+                    @if (Context.Session.GetString("Role") == "admin")
+                    {
+                        <a asp-controller="Aranzman" asp-action="Edit" asp-route-id="@aranzman.Id" class="btn btn-success">Izmeni</a>
+                        <a asp-controller="Aranzman" asp-action="Delete" asp-route-id="@aranzman.Id" class="btn btn-secondary">Obriši</a>
+                    }
+                    else if (Context.Session.GetString("Role") == "user" && !aranzman.Placeno)
+                    {
+                        <a asp-controller="Aranzman" asp-action="Reservation" asp-route-id="@aranzman.Id" class="btn btn-success">Rezerviši</a>
+                    }
+                    else if (Context.Session.GetString("Role") == "user" && aranzman.Placeno) {
+                        <a asp-controller="Aranzman" asp-route-id="@aranzman.Id" class="btn btn-danger">Aranzman je rezervisan</a>
+                    }
+                    else if (Context.Session.GetString("Role") == "guest")
+                    {
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-danger">Prijavite se za rezervaciju</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

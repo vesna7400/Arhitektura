@@ -1,0 +1,37 @@
+@model Arhitektura.Models.Aranzman
+
+<h2>Rezervacija</h2>
+
+<div class="card">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            @if (!string.IsNullOrEmpty(Model.Slika))
+            {
+                <img src="@Model.Slika" class="card-img-top" alt="Slika destinacije">
+            }
+            else
+            {
+                <img src="/images/notFound.png" class="card-img-top" alt="Slika destinacije">
+            }
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Opis</h5>
+                <p class="card-text">
+                    Ukupna cena: @Model.UkupnaCena RSD<br>
+                    Status: @(Model.Placeno ? "Rezervisan" : "Dostupan")<br>
+                    Datum realizacije: @Model.DatumRealizacije.ToString("dd.MM.yyyy").<br>
+                    Hotel: @Model.Hotel.Naziv<br>
+                    Turistička agencija: @Model.TuristickaAgencija.Naziv<br>
+                </p>
+                <form asp-controller="Aranzman" asp-action="ConfirmReservation" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Potvrdi rezervaciju" class="btn btn-success" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

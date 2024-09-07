@@ -5,26 +5,6 @@
       "PackagePath": "staticwebassets\\Arhitektura.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Lenovo T430s\\Desktop\\VesnaArhitektura\\wwwroot\\arhitektura\\Aranzman\\arhitektura.aranzman.json",
-      "PackagePath": "staticwebassets\\arhitektura\\Aranzman\\arhitektura.aranzman.json"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo T430s\\Desktop\\VesnaArhitektura\\wwwroot\\arhitektura\\Destinacija\\arhitektura.destinacija.json",
-      "PackagePath": "staticwebassets\\arhitektura\\Destinacija\\arhitektura.destinacija.json"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo T430s\\Desktop\\VesnaArhitektura\\wwwroot\\arhitektura\\Hotel\\arhitektura.hotel.json",
-      "PackagePath": "staticwebassets\\arhitektura\\Hotel\\arhitektura.hotel.json"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo T430s\\Desktop\\VesnaArhitektura\\wwwroot\\arhitektura\\TuristickaAgencija\\arhitektura.turisticka_agencija.json",
-      "PackagePath": "staticwebassets\\arhitektura\\TuristickaAgencija\\arhitektura.turisticka_agencija.json"
-    },
-    {
-      "Id": "C:\\Users\\Lenovo T430s\\Desktop\\VesnaArhitektura\\wwwroot\\arhitektura\\User\\arhitektura.user.json",
-      "PackagePath": "staticwebassets\\arhitektura\\User\\arhitektura.user.json"
-    },
-    {
       "Id": "C:\\Users\\Lenovo T430s\\Desktop\\VesnaArhitektura\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

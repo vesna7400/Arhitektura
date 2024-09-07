@@ -1,8 +1,18 @@
 @model Arhitektura.Models.Hotel
 
+<style>
+    .bckgrnd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+
+<div class="bckgrnd">
 <h2>Dodaj hotel</h2>
 
-<form asp-controller="Hotel" asp-action="Create" method="post">
+<form asp-controller="Hotel" asp-action="Create" method="post" style="width: 50%;">
     <div class="form-group">
         <label asp-for="Naziv">Naziv:</label>
         <input asp-for="Naziv" class="form-control" />
@@ -30,6 +40,7 @@
     <br>
     <button type="submit" class="btn btn-success">Sačuvaj</button>
 </form>
+</div>
 
 @section Scripts {
     <script>

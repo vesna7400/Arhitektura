@@ -1,8 +1,18 @@
 @model Arhitektura.Models.Aranzman
 
+<style>
+    .bckgrnd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+
+<div class="bckgrnd">
 <h2>Dodaj aranžman</h2>
 
-<form id="editForm" asp-controller="Aranzman" asp-action="Create" method="post">
+<form id="editForm" asp-controller="Aranzman" asp-action="Create" method="post" style="width: 50%;">
     <div class="form-group">
         <label asp-for="UkupnaCena">Ukupna cena</label>
         <input asp-for="UkupnaCena" class="form-control"/>
@@ -50,6 +60,7 @@
     <br>
     <button type="submit" class="btn btn-success">Sačuvaj</button>
 </form>
+</div>
 
 @section Scripts {
     <script>

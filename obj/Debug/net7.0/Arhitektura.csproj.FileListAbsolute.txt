@@ -110,3 +110,4 @@ C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\refint\Arhitektu
 C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.pdb
 C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.genruntimeconfig.cache
 C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\ref\Arhitektura.dll
+C:\Users\Lenovo T430s\Desktop\VesnaArhitektura\obj\Debug\net7.0\Arhitektura.sourcelink.json
